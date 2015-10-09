@@ -22,33 +22,7 @@ Then, you have to follow our naming rules in your code and how you display your 
 
 You can see what already exists but it must follow this template :
 
---- WeakAura Strings ---
-
-The WA strings
-
-
---[[
-
-Author : XX
-
-Version : YY
-
-Readme :
-
-	ZZ
-
-	AA
-
-	BB
-
-	...
-
-]]--
-
-
---- WA Sections ---
-
-Your Code
+[Template.lua](https://github.com/Quichons/WeakAuras/blob/master/Template.lua)
 
 ## Credits
 
