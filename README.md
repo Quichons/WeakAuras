@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository is meant to be a place where we share and improve all the WeakAuras we use during Raid.
+This repository is meant to be a place where we share and improve all the WeakAuras we use during raids.
 
 These can be either found on Internet and then edited to fit our needs or made directly by us.
 
@@ -12,13 +12,13 @@ If you are here just to import these (using strings), then browse the repository
 
 To achieve this, simply do a triple left-click on the line where strings are (to select the entire line), then copy it.
 
-Also, take the time to read the line right below the strings, usually these contains precious infos like what it does or how do you customize it.
+Also, take the time to read the lines right below, usually these contains precious infos like what it does or how it may be customized it.
 
 ## How Can I Contribute ?
 
 First, we only accept -for the moment- members of Quichons guild.
 
-Then, you have to follow our naming rules in your code and how you display your weakauras.
+Then, you have to follow our naming rules in your code and how auras are displayed.
 
 You can see what already exists but it must follow this template :
 
@@ -26,4 +26,4 @@ You can see what already exists but it must follow this template :
 
 ## Credits
 
-To [Quichons guild](http://www.quichons.fr/) from Elune.
+[Quichons guild](http://www.quichons.fr/) from Elune.
