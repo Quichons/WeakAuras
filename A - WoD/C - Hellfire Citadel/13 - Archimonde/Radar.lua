@@ -5,11 +5,11 @@ dCfbQbqiHiQSiPkxsicJsfDkvYQuO6vcrnlH0Tub7sv5xQuyykqhtKyzIKEMkettQQQRPqX2KiX3uPiJ
 --[[
 Author : Pottm
 Edited : By Aethys & Cleonis for Quichons@Elune
-Version : 1.1
+Version : 1.1 (10.01.2015)
 Readme :
-	WeakAura from Pottm wich display both Chaos lines and Torment circles, you can 
-	choose if you want to display or not them by changing the fChaosDisplay and 
-	sTormentDisplay variables in Init (Actions tab) to either true or false.
+	WeakAura from Pottm wich display both Chaos lines and Torment circles, you can choose if you want to 
+	display or not them by changing the fChaosDisplay and sTormentDisplay variables in Init (Actions tab) 
+	to either true or false.
 ]]--
 
 
