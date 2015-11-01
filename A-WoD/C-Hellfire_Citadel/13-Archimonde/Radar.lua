@@ -24,7 +24,7 @@ aura_env.sTormentDisplay = true
 
 --- Trigger\Custom Trigger ---
 
--- Trigger [...events_to_trigger_toadd...]
+-- Trigger [COMBAT_LOG_EVENT_UNFILTERED, ENCOUNTER_START]
 function(event, ...)
     local _, subevent, _, _, _, _, _, _, destName, _, _, spellId = ...
     
@@ -48,7 +48,7 @@ end
 
 --- Display\Custom Function ---
 
--- Refresh
+-- Refresh [Every Frame]
 function()
     local f = WeakAuras["regions"][aura_env.id]["region"]
     f:SetWidth(max(f:GetWidth(), f:GetHeight()))
@@ -405,5 +405,3 @@ function()
     
     return ""
 end
-
---
