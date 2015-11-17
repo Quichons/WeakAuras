@@ -45,7 +45,7 @@ function(_,_,message,_,_,sourceName,_,_,destGUID)
             PlayerClassColor = {r = 0.502, g = 0.502, b = 0.502}
         end
         WA_Aethys_Kicked_Player[1][2] = GetTime()
-        local name = souceName and string.gsub(souceName, "%-[^|]+", "") or sourceName;
+        local name = sourceName and string.gsub(sourceName, "%-[^|]+", "") or sourceName;
         WA_Aethys_Kicked_Player[1][1] = format("%02x%02x%02x%s|r", PlayerClassColor.r*255, PlayerClassColor.g*255, PlayerClassColor.b*255, name)
         return true
     end
