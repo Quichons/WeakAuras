@@ -150,7 +150,7 @@ end
 
 --- Trigger\Custom Trigger ---
 
--- Trigger WA Satus [Health -> Target/Focus]
+-- Trigger WA Status [Health -> Target/Focus]
 
 
 --- Display\Custom Function ---
