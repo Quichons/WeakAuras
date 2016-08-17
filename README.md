@@ -18,7 +18,7 @@ Also, take the time to read the lines right below, usually these contains precio
 
 First, we only accept -for the moment- members of Quichons guild.
 
-Then, you have to follow our naming rules in your code and how auras are displayed.
+Then, you have to follow our naming rules (see [Naming_Rules.txt](https://github.com/Quichons/WeakAuras/blob/master/Raids/Naming_Rules.txt) for Raids) in your code and how auras are displayed.
 
 You can see what already exists but it must follow this template :
 
