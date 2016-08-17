@@ -1,7 +1,12 @@
 {1}-{2}-{3}-{4}_{5}
 
-{1} @ Extension Code : A is WoD, B is Legion, ...
+{1} @ Expansion Code : A is WoD, B is Legion, ...
 {2} @ Raid Code : A is the first raid released, B the 2nd, ...
 {3} @ Boss Number : Put 00 if it's something available for the whole raid or if it's a Pack.
 {4} @ Boss Name : Self-explanatory...
 {5} @ WA Name : Whatever you want that describes the WA.
+
+Example :
+A-C-06-Gorefiend_Corrupted_Souls.lua
+
+Means it's a WA meant for the 6th Boss (Gorefiend) of the 3rd Raid (Hellfire Citadel) of the (first supported) expansion Warlords of Draenor. And that it's about Corrupted Souls
