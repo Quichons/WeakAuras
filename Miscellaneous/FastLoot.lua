@@ -5,8 +5,7 @@ dKdJdaGlPcBdvPMjuA2aDyOQ7bsDBf(lizNGWEvTBfTFYOOunmPk)gYLrzOsfnyXWPehuQkNIs5yufNJ
 Author : Aethys
 Version : 1.0 (06.18.2016)
 Readme :
-    WeakAura that send a chat message to show who pulled and how far from the Pull Timer if there is one.
-    You can customize the channel output in the init section.
+    WeakAura that loot items as soon as the loot window is opened. (Faster than default Blizz' Auto Loot)
 ]]--
 
 
