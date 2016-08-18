@@ -4,10 +4,27 @@ dCfdDfqiuukQfHuvxcfLSjuukYNqrPkJcP0PqQSkerEfsvmlQGBrcTluKFHuLgMk4yIkldr5zurMgvux
 Author : Kutikuti
 Version : 1.0
 Readme :
-	ZZ
-	AA
-	BB
-	...
+Spell CD:
+-MB
+-VEr/VB
+-SWD
+-VT
+-MB/SF
+
+Dots
+-SWP
+-VT
+
+Buffs
+-MS number of targets (Twintop)
+-Void Ray
+-ROW
+-SWV
+-AS Count (Twintop)
+-MS (Twintop)
+-Lingering Insanity/VoidForm
+
+A utiliser idéalement avec la insanity bar pour l'agencement des icones
 ]]--
 
 --- WA Sections ---
