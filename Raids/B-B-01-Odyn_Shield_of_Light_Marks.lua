@@ -15,11 +15,11 @@ TODO :
 
 -- Init
 aura_env.afterTimer = 0.5;
-aura_env.hyrjaGUID = "";
+WA_Aethys_hyrjaGUID = "";
 
 function aura_env.markHyrjaTarget ()
     for Index = 1, 4 do
-        if UnitGUID("boss"..tostring(Index)) == aura_env.hyrjaGUID then
+        if UnitGUID("boss"..tostring(Index)) == WA_Aethys_hyrjaGUID then
             -- 8 is Skull
             if UnitIsGroupLeader("player") or UnitIsGroupAssistant("player") then
                 SetRaidTarget("boss"..tostring(Index).."target", 8);
@@ -34,9 +34,9 @@ end
 --- Trigger\Custom Trigger ---
 
 -- Trigger [COMBAT_LOG_EVENT_UNFILTERED]
-function(_, _, subEvent, _, sourceGUID, _, _, _, _, _, _, _, spellId)
+function (_, _, subEvent, _, sourceGUID, _, _, _, _, _, _, _, spellId)
     if subEvent == "SPELL_CAST_START" and spellId == 228162 then
-        aura_env.hyrjaGUID = sourceGUID;
+        WA_Aethys_hyrjaGUID = sourceGUID;
         C_Timer.After(aura_env.afterTimer, aura_env.markHyrjaTarget);
     end
 end
