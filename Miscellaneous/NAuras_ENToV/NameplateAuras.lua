@@ -10,6 +10,7 @@ NameplateAurasAceDB = {
 			["HideBlizzardFrames"] = false,
 			["DefaultSpellsAreImported"] = true,
 			["StacksTextAnchorIcon"] = "BOTTOMRIGHT",
+			["TimerTextAnchorIcon"] = "CENTER",
 			["CustomSpells2"] = {
 				--- Emerald Nightmare
 				-- Nythendra
@@ -121,7 +122,6 @@ NameplateAurasAceDB = {
 					["spellID"] = 232450,
 				}
 			},
-			["TimerTextAnchorIcon"] = "CENTER",
 		},
 	},
 }
