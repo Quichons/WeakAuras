@@ -1,45 +1,36 @@
 --- WeakAura Strings ---
-dKdJdaGlPcBdvPMjuA2aDyOQ7bsDBf(lizNGWEvTBfTFYOOunmPk)gYLrzOsfnyXWPehuQkNIs5yufNJskNwk)uQKzHQOwov8qPQYtLSmOYZrLjsjvtvPMmvA6ixev1RKQQEgf66a2ii6ZuWMvITlvQpsjPVIQittj13rvWirvO3PKmAkY4PK4KuL6wOk5AuuNhkwjOEmv13Ok5757xJxUVC)(LBJZciEmBMvOxVCygAO5gJf2lIzf6f50myG589lcJf2lFaocnE5dWrObuMAUSx(aCeA8YhGJqJxlatFQHMk2TjyffffqKpEqf(dleMcerkqR0BLGvuuuwqoknfOv8WZkwLrqamWIqK3eBWz3MIlsWkkkkkkkkTffSievGiIhXZ5nXg2B2uitSPGvuuuuuuuuuuuWIqubIi7nBReSIIIIIIIcdKJjyffffffffffff(dleMcerkqRWFyHWuGisP)kEwjyffffffff20vWkkkkSPRGvuuuAlk8hwimfiIuGgAfRYiiagyriYBIn4SBtHmXMcwrrrrrrrPFGiogweISBBLIGvuuuytxbZMUVyDZMe3lSD11gQU6Kpe8T(lFaocnGIWyH9I1nBsNEbmjNMbdmNVF5dWrOXRfGPp1qtf72eSIIIIdJaCMkKdaBLGztxblyblybl4tV4HMlz6qU2CpJ82OX1M7HZOxwZmUVWlZ4EXXax6e1M0lS8HC)Acm2ondgyoChcpVmXAgmrhY1M7zK3gnU2CpCg9YAMX9fEzg3RM7lEQpO6JrMWWbfK45O(aieweIEbIW7(9l32YsZhaKW89Rbai1((0Pxoiq23VgaGu77tNE5G3N99Rbai1((0PxeEq2K((1aaKAFF60Rf8(udn)(1aaKAFF60Px4N(MqoDIAt6fw(qUp9I7fUo80rVoW51RUpeEwJZZPF
+dWJXeaWsQQQ2LcSnjrntQs)fqZgshgQUjvvPld62k58OKDQOAVQ2Te7N8tfrdda)gvNMkdfGmyXWHsheG6ukshts15KK0cPQQCDG(MKuwofEivv4PsTmkYZrXeLKQPQutMsMoYfPQ8kQQINPGEhezJOuMfvvYMHW2PO(OKeFLQk6ZqX3LezKuvPMgkvJMQy8scDsfHBjj4Ask3dIALuQhRqJsr5x)73R3wVT((TLJblkoRnSI073GfYWHbd0473JGmeF9w2Yw2Yw2NEBaX44LnlSW3eSI0B8rYzgUnCyWan8xUf8Zb4TR4iGJ8fwuibT(86VXhjhVW89BxXrF)2IdCeKH4R7FVhbzi(6noOboqyX8aFlSeRgLtkiRaasNo9MbIIaqCxHE71hB734wwoYXl4OajdhgmqdMVp9gVm6HBaiURqV96JT97k5SipNn2RbWWkpCi71aW0WQv1AMoIkuZ07c4AB4WGbAW851FtgomyGgF)MyHf(EeKH4R3JGmeFbKyHf(gAgwO3JGmeF9gbyzKC8IYSPYwrrrXHqPWjLjyApoeK)dzvDELkZMQqEGfzROOOOOOOGdAGdewmpW3clXQr5KcYkaGKSvuuuuuuuqWnuCkiRu3VuQcKMdU8Y50eeCXmBQIfx2kkkkkkkkkkkkoekE5CQr5KFJZmbbxZCtvipWISvuuuuuuuuuuuuuuu8Y5uJYPzUPijBffffffffffffikdu2kkkkkkkkkkkkkkkk4Gg4aHfZd8TWsSAuoPGScoOboqyX8aFlSeRgLtk(JsDKKTIIIIIIIIIIIcSyjBffffffffyXs2kkkkkkkkoek4Gg4aHfZd8TWsSAuoPGmYkvbsZbxE5CAccUyMnvH8alYwrrrrrrrrrrrXpq5mqVConBkskYwrrrrrrrbwSKTIIIcSyjBffffdibAuuqGJYars2WI1BOzyHyE7DYj3aNeq(M7R6Vhbzi(cOhNf8n5wqRtV9aDy8qNn2RbWWkpCi71aW0WQv1AMoIkuZ0BuoU13VjCuyH((9ceLCFF60BlhceUrquI13VxGOK77tNEBGpc)(9ceLCFF60Be4JKJx((9ceLCFF60BSMXs4OWc997fik5((0P3gCu43VxGOK77tNo92z92pbmqadjpSyaYgodbyqI7LZPtVzEBAGPbMgu)T5pVo7MQF6h
 
 --[[
 Author : Aethys
 Version : 1.0 (06.18.2016)
 Readme :
     WeakAura that loot items as soon as the loot window is opened. (Faster than default Blizz' Auto Loot)
+    Can be disabled by letting Shift key down.
 ]]--
 
 
 --- Actions\On Init\Custom ---
 
 -- Init
-
+aura_env.EmptySlot = 0;
 
 --- Trigger\Custom Trigger ---
 
 -- Trigger [LOOT_OPENED]
-
 function ()
-    local EmptySlot = 0;
-    for i = 1, GetNumLootItems() do
-        if LootSlotHasItem(i) then
-            LootSlot(i);
-        else
-            EmptySlot = EmptySlot + 1;
+    if not IsShiftKeyDown() then
+        aura_env.EmptySlot = 0;
+        for i = 1, GetNumLootItems() do
+            if LootSlotHasItem(i) then
+                LootSlot(i);
+            else
+                aura_env.EmptySlot = aura_env.EmptySlot + 1;
+            end
+        end
+        if aura_env.EmptySlot == GetNumLootItems() then
+            CloseLoot(); 
         end
     end
-    if EmptySlot == GetNumLootItems() then
-        CloseLoot(); 
-    end
+    return false;
 end
-
-
-
--- Untrigger
-function ()
-    return true;
-end
-
-
-
-
-
