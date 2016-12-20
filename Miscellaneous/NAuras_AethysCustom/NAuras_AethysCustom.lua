@@ -3,9 +3,21 @@ NameplateAurasDB = {
 }
 NameplateAurasAceDB = {
 	["profileKeys"] = {
-		["Aèthÿs - Elune"] = "Default",
-		["Aèthÿz - Elune"] = "Default",
+		-- WoW #2
+		["Aêthyz - Elune"] = "Default",
+		-- WoW #3
+		["Aëthÿs - Elune"] = "Default",
+		["Äethÿs - Elune"] = "Default",
 		["Aethysa - Elune"] = "Default",
+		["Aëthyz - Elune"] = "Default",
+		-- WoW #4
+		["Aèthÿs - Elune"] = "Default",
+		["Aethykz - Elune"] = "Default",
+		-- WoW #5
+		["Aethypz - Elune"] = "Default",
+		["Aèthÿz - Elune"] = "Default",
+		-- WoW #6
+		["Aethyst - Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
